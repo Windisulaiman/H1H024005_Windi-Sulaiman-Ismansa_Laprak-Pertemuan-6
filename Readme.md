@@ -1,5 +1,4 @@
 # ⚡ Modul 6 : Interrupt dan Timer
-
 ---
 
 # 📚 SOAL DAN JAWABAN MODUL 6 — Interrupt dan Timer
@@ -11,13 +10,11 @@ Arduino Uno — External Interrupt & Timer (`millis()`)
 
 # 🔔 Percobaan 6A : External Interrupt
 
----
-
 ## 📌 Pertanyaan Praktikum 6A
 
 ---
 
-### ❓ Soal 1  
+###  Soal 1  
 Bagaimana tombol dapat mengubah kondisi LED menggunakan interrupt?
 
 ### ✅ Jawaban
@@ -36,7 +33,7 @@ Dengan mekanisme ini, LED dapat berubah kondisi tanpa polling tombol secara teru
 
 ---
 
-### ❓ Soal 2  
+###  Soal 2  
 Apa fungsi `attachInterrupt()` pada program?
 
 ### ✅ Jawaban
@@ -63,7 +60,7 @@ Tanpa fungsi ini, Arduino tidak mengetahui ISR mana yang harus dipanggil ketika 
 
 ---
 
-### ❓ Soal 3  
+###  Soal 3  
 Mengapa `delay()` dan `Serial.print()` tidak disarankan dalam ISR?
 
 ### ✅ Jawaban
@@ -83,7 +80,7 @@ Karena itu ISR hanya disarankan untuk operasi ringan seperti:
 
 ---
 
-### ❓ Soal 4  
+###  Soal 4  
 Apa fungsi keyword `volatile` pada variabel `ledState`?
 
 ### ✅ Jawaban
@@ -102,7 +99,7 @@ Dengan `volatile`, compiler selalu membaca nilai terbaru langsung dari RAM.
 
 ---
 
-### ❓ Soal 5  
+###  Soal 5  
 Pada percobaan digunakan mode interrupt `FALLING`. Modifikasikan menggunakan mode interrupt lain (`RISING`, `CHANGE`, atau `LOW`) kemudian jelaskan perbedaannya!
 
 ---
@@ -181,11 +178,11 @@ Kurang cocok untuk toggle sederhana.
 
 ---
 
-## 📌 Pertanyaan Praktikum 6B
+##  Pertanyaan Praktikum 6B
 
 ---
 
-### ❓ Soal 1  
+###  Soal 1  
 Bagaimana fungsi `millis()` bekerja pada program?
 
 ### ✅ Jawaban
@@ -210,7 +207,7 @@ Metode ini memungkinkan LED berkedip tanpa menghentikan program utama.
 
 ---
 
-### ❓ Soal 2  
+###  Soal 2  
 Apa perbedaan utama antara `delay()` dan `millis()`?
 
 ### ✅ Jawaban
@@ -240,7 +237,7 @@ Program tetap berjalan sambil mengecek waktu.
 
 ---
 
-### ❓ Soal 3  
+###  Soal 3  
 Mengapa metode `millis()` disebut non-blocking?
 
 ### ✅ Jawaban
@@ -257,7 +254,7 @@ Keuntungannya:
 
 ---
 
-### ❓ Soal 4  
+###  Soal 4  
 Modifikasi program agar:
 - LED pertama berkedip setiap 1 detik
 - LED kedua berkedip setiap 500 ms
@@ -303,7 +300,7 @@ void loop() {
 }
 ```
 
-### 🧠 Analisis Program
+### Analisis Program
 
 - LED pertama berkedip setiap 1000 ms
 - LED kedua berkedip setiap 500 ms
@@ -316,7 +313,7 @@ void loop() {
 
 ---
 
-### ❓ Soal 1  
+###  Soal 1  
 Sebutkan dan jelaskan keuntungan menggunakan interrupt dibanding polling!
 
 ### ✅ Jawaban
@@ -335,7 +332,7 @@ Event penting tidak mudah terlewat.
 
 ---
 
-### ❓ Soal 2  
+###  Soal 2  
 Mengapa timer penting dalam sistem embedded dan real-time?
 
 ### ✅ Jawaban
@@ -351,7 +348,7 @@ Dalam sistem real-time, ketepatan waktu sangat penting sehingga timer menjadi ko
 
 ---
 
-### ❓ Soal 3  
+###  Soal 3  
 Jika interrupt dan timer digabung dalam satu sistem, bagaimana alur kerja sistem tersebut?
 
 ### ✅ Jawaban
@@ -370,7 +367,7 @@ Keduanya bekerja saling melengkapi:
 
 ---
 
-### ❓ Soal 4  
+###  Soal 4  
 Apa yang terjadi jika ISR terlalu panjang atau kompleks?
 
 ### ✅ Jawaban
@@ -390,7 +387,7 @@ Karena itu ISR harus:
 
 ---
 
-# 🎯 Kesimpulan
+#  Kesimpulan
 
 Praktikum Modul 6 berhasil menunjukkan implementasi:
 
